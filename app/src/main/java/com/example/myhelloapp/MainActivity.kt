@@ -13,6 +13,7 @@ import com.google.gson.Gson
 
 
 const val TAG = "bisher_tag"
+const val TAG2 = "bisher_tag2"
 
 class MainActivity : AppCompatActivity() {
 
