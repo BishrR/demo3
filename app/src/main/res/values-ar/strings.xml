@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_string">تطبيق بشر</string>
+    <string name="signup">تسجيل</string>
+
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="get_start">هيا لنبدأ</string>
+    <string name="or_sign">أو سجل باستخدام…</string>
+    <string name="app_name">تطبيقي</string>
+    <string name="hello">مرحبًا</string>
+    <string name="welcome">أهلًا بك في النقطة الرائدة،حيث تحدياتك هي شغفنا</string>
+    <string name="login">دخول</string>
+    <string name="name">الاسم</string>
+    <string name="forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="example_bisher">مثال: بشر</string>
+    <string name="example_bisher_gmail_com">مثال: bishr@gmail.com</string>
+    <string name="use_longer_than_8_characters">استخدم أكثر من 8 أحرف</string>
+</resources>

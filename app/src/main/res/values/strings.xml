@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="test_string">Bisher app</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="get_start">Let\'s get started!</string>
+    <string name="or_sign">Sign up using</string>
+    <string name="hello">Hello</string>
+    <string name="welcome">Welcome To Leading Point, where your challenges are our passion</string>
+    <string name="login">Login</string>
+
+    <string name="name">Name</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="example_bisher">Example: Bisher</string>
+    <string name="example_bisher_gmail_com">Example: bisher@gmail.com</string>
+    <string name="use_longer_than_8_characters">Use longer than 8 characters</string>
+    <string name="home">Home</string>
+    <string name="try_again">Try Again</string>
+    <string name="title_activity_user">UserActivity</string>
+</resources>

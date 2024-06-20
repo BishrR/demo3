@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:barrierDirection="top"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:barrierDirection="top"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:barrierDirection="start"
+        app:layout_constraintGuide_begin="41dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:barrierDirection="start"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_login"
+        app:layout_constraintBottom_toTopOf="@id/guid2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guid1" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textColor="#9c9c9c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/input_text"
+        app:layout_constraintEnd_toEndOf="@id/guid4"
+        app:layout_constraintStart_toStartOf="@id/guid3"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:inputType="text"
+        android:focusable="true"
+        android:hint="@string/example_bisher"
+        android:textStyle="italic"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/email"
+        android:textColor="#9c9c9c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputName" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/input_text"
+        app:layout_constraintEnd_toEndOf="@id/guid4"
+        app:layout_constraintStart_toStartOf="@id/guid3"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:inputType="textEmailAddress"
+        android:hint="@string/example_bisher_gmail_com"
+        android:textStyle="italic"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/password"
+        android:textColor="#9c9c9c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/input_text"
+        app:layout_constraintEnd_toEndOf="@id/guid4"
+        app:layout_constraintStart_toStartOf="@id/guid3"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:inputType="textPassword"
+        android:hint="@string/use_longer_than_8_characters"
+        android:textStyle="italic"
+        android:textSize="15sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/forgot_password"
+        android:textColor="#9c9c9c"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupBT"
+        android:background="@drawable/login"
+        android:text="@string/signup"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/guid4"
+        app:layout_constraintTop_toBottomOf="@id/forgot"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        android:id="@id/guid5"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"
+        android:id="@+id/guid6"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_group"
+        app:constraint_referenced_ids="forgot_card,forgot_icon, forgot_password, home, try_again"
+        android:visibility="invisible"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/forgot_card"
+        app:layout_constraintTop_toTopOf="@+id/guid5"
+        app:layout_constraintBottom_toBottomOf="@id/guid6"
+        app:layout_constraintStart_toStartOf="@id/guid3"
+        app:layout_constraintEnd_toEndOf="@id/guid4"
+        app:cardCornerRadius="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_user_question"
+        android:id="@+id/forgot_icon"
+        app:layout_constraintTop_toTopOf="@id/forgot_card"
+        app:layout_constraintBottom_toBottomOf="@id/forgot_card"
+        app:layout_constraintStart_toStartOf="@id/forgot_card"
+        app:layout_constraintEnd_toEndOf="@id/forgot_card"
+        app:layout_constraintVertical_bias="0.1"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_password"
+        android:text="@string/forgot_password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/forgot_icon"
+        app:layout_constraintStart_toStartOf="@id/forgot_card"
+        app:layout_constraintEnd_toEndOf="@id/forgot_card"
+        android:elevation="11dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        app:layout_constraintTop_toTopOf="@id/forgot_card"
+        app:layout_constraintBottom_toBottomOf="@id/forgot_card"
+        app:layout_constraintStart_toStartOf="@id/forgot_card"
+        app:layout_constraintEnd_toEndOf="@id/forgot_card"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.15"
+        android:background="@drawable/login"
+        android:text="@string/home"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:elevation="500dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/try_again"
+        app:layout_constraintTop_toTopOf="@id/forgot_card"
+        app:layout_constraintBottom_toBottomOf="@id/forgot_card"
+        app:layout_constraintStart_toStartOf="@id/forgot_card"
+        app:layout_constraintEnd_toEndOf="@id/forgot_card"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.85"
+        android:background="@drawable/signup"
+        android:text="@string/try_again"
+        android:textSize="20sp"
+        android:textColor="#483bd9"
+        android:elevation="500dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
